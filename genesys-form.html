@@ -17,25 +17,25 @@
     <p class="lead">Please fill in the application form </p>
   <form id="applicationForm" action="https://formsubmit.co/erikhils15@gmail.com" method="POST" enctype="multipart/form-data"
   target="_blank">
-    <input type="hidden" name="captcha" value="true" >
-    <input type="hidden" name="_next" value="https://uqerik.github.io/html-intro/genesys-form/thankyou-page.html">
+    <input type="hidden" name="_captcha" value="true" >
+    <input type="hidden" name="_next" value="https://uqerik.github.io/html-intro/index/thankyou-page.html">
 
-    <label>
-      Full Name <span>*</span> <input type="text" id="fullName" placeholder="Enter name" required />
+    <label for="fullName">
+      Full Name <span>*</span> <input type="text" name="fullName" id="fullName" placeholder="Enter name" required />
     </label><br>
 
     <!-- Email -->
-    <label>
-      Email Address <span>* </span><input type="email" id="email" placeholder="abc@xyz.com" required />
+    <label for="email">
+      Email Address <span>* </span><input type="email" name="email" id="email" placeholder="abc@xyz.com" required />
     </label><br>
 
     <!-- Phone Number -->
-    <label>
-      Phone Number <span>*</span><input type="tel" id="phoneNumber" placeholder="0801 234 5678" required />
+    <label for="phoneNumber">
+      Phone Number <span>*</span><input type="tel" id="phoneNumber" name="phoneNumber" placeholder="0801 234 5678" required />
     </label><br>
 
     <!-- Gender -->
-    <label>Gender <span>*</span></label><br>
+    <label for="gender">Gender <span>*</span></label><br>
       <input type="radio" name="gender" value="female" required/> <span>Female</span>
 
       <input type="radio" name="gender" value="male" required /> <span>Male</span>
@@ -43,22 +43,25 @@
       <input type="radio" name="gender"  value="other" required /> <span>Other</span>
     <br>
 
-    <label>Highest certificate acquired <span>*</span>
-      <select id="certification" required>
+    <!-- Certification -->
+    <label for="certification">Highest certificate acquired <span>*</span>
+      <select id="certification" name="certification" required>
         <option value="" disabled selected>choose your Certificate</option>
-        <option value="5">Master's Degree </option>
-        <option value="4">Bachelor's Degree </option>
-        <option value="3">OND</option>
-        <option value="2">WAEC / SSCE</option>
-        <option value="1">First School Leaving</option>
+        <option value="master's">Master's Degree </option>
+        <option value="Bachelor">Bachelor's Degree </option>
+        <option value="ond">OND</option>
+        <option value="waec-ssce">WAEC / SSCE</option>
+        <option value="first-school-leaving">First School Leaving</option>
       </select>
     </label><br>
 
-    <label>Your values <span>(optional)</span></label><br>
-    <textarea rows="3" id="textArea"></textarea><br>
+    <!-- Your Values-->
+    <label for="values">Your values <span>(optional)</span></label><br>
+    <textarea rows="3" id="values" name="values"></textarea><br>
 
-    <input type="checkbox" value="true" required> By clicking the checkbox you accept our terms and conditions
-
+    <label for="terms"><input type="checkbox" value="true" name="terms" required> <span>By clicking the checkbox you accept our terms and conditions</span></label>
+    
+    <!-- Submit Button -->
     <button type="submit" id="submit">Submit</button>
 
   </form>

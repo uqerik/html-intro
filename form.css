@@ -96,6 +96,8 @@ textarea{
   margin-bottom: 10px;
   border-radius: 3px;
   border: solid 1px 818181;
+  padding: 10px;
+  box-sizing: border-box;
 }
  textarea, input:focus{
   outline: none;
