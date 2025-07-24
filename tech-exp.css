@@ -1,0 +1,131 @@
+/* Css for the web page tech-exp*/
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 15px;
+  
+}
+
+body{
+  background-color: rgb(61, 68, 71);
+}
+
+#container{
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+}
+/*
+.my-picture{
+  width: 100%;
+  height: 100%;
+  object-position: right;
+  object-fit: cover;
+  border-radius: 40px 0 0 40px;
+}
+*/
+.profile-img{
+  flex: 5;
+  height: auto;
+
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2)50%, rgba(0, 0, 0, 0.2)50%), url(image/Koshe.png);
+  background-repeat: repeat;
+  background-position: left;
+  background-size: contain;
+
+}
+
+
+/*Right part of the screen*/
+
+.tech-journey{
+  flex: 4;
+  padding: 20px;
+  /*border: solid 1px #eee;*/
+  border-left: none;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75)50%, rgba(0, 0, 0, 0.75)50%), url(image/brandi-redd-unsplash.jpg.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 280%;
+}
+
+.tech-journey h1 span{
+  font-size: 0.4em;
+  color: rgb(201, 201, 201);
+}
+
+.tech-journey h1{
+  font-size: 3em;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px #747474;
+  color: #5440c9;
+}
+
+.tech-journey p{
+  line-height: 1.5em;
+  color: rgb(201, 201, 201);
+}
+
+.tech-journey p a{
+  color: rgb(201, 201, 201);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.tech-journey p a:hover{
+  color: #5440c9;
+}
+
+.tech-journey p a:active, .tech-journey p a:visited{
+  color: rgb(201, 201, 201);
+  
+}
+
+.journey-label{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-weight: 600;
+  color: #5440c9;
+}
+
+
+#yourJourney{
+  resize: none;
+  height: 75px;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+  outline: none;
+  border: solid 1px #747474;
+  background: none;
+  border-radius: 0 15px 0 15px;
+  line-height: 1.5em;
+  color: rgb(201, 201, 201);
+}
+
+button{
+  display: block;
+  padding: 7px 30px;
+  margin: 20px auto;
+  border: none;
+  border-bottom: solid 2px #333;
+  box-sizing: border-box;
+  background-color: #5440c9;
+  color: #fff;
+}
+
+button:hover{
+  background-color: #3822b6;
+}
+
+button:active{
+  position: relative;
+  top: 1px;
+}
