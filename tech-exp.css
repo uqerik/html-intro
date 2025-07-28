@@ -31,12 +31,11 @@ body{
 .profile-img{
   flex: 5;
   height: auto;
-
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2)50%, rgba(0, 0, 0, 0.2)50%), url(image/Koshe.png);
   background-repeat: repeat;
   background-position: left;
   background-size: contain;
-
+  border-radius: 40px 0 0 40px;
 }
 
 

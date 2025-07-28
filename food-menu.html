@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koshe Food Menu</title>
+  
+  <!-- CUSTOM CSS -->
+   <link rel="stylesheet" type="text/css" href="food-menu.css">
+</head>
+
+<body>
+  <header>
+    <div id="header">
+      <nav id="navLinks">
+        <ul class="sidebar">
+          <li><a href="#" onclick="hideSidebar()" class="close-sidebar"><img src="image/close_24dp_FFFFF.png"> </a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Order</a></li>
+          <li><a href="#">Contact Us</a></li> 
+          <li><input type="search" class="search" placeholder="Search a meal..">
+            <button class="btn-search" type="button">Search</button>
+          </li>
+          
+        </ul>
+        <ul>
+          <li ><a href="#" class="brand-name">Koshe foods</a></li>
+          <li class="hideOnMobile"><a href="#">Home</a></li>
+          <li class="hideOnMobile"><a href="#">Order</a></li>
+          <li class="hideOnMobile"><a href="#">Contact Us</a></li>
+          <li class="hideOnMobile" role="div"><input type="search" class="search" placeholder="Search a meal..">
+          <button class="btn-search" type="button">Search</button>
+          </li>
+          <li><a href="#" class="hamburger" onclick= "showSidebar()"><img src="image/menu_24dp.svg"></a></li>
+        </ul>
+      </nav>
+    </div><!-- #header-->
+  </header>
+
+    <main>
+      <div id="container">
+        <section class="food-section">
+          <div class="menu">
+            <h2 class="section-head">Please select your meal</h2>
+            <div class="food-menu">
+              <div class="item-detail">
+                <div class="food-image">
+                  <img src="image/anh-nguyen-kcA-c3f_3FE-unsplash.jpg" class="dish" alt="food" width="200px">
+                </div>
+
+                <div class="food-detail">
+                  <p class="food-name">Fried rice</p>
+                  <p class="food-price">$<span class="food-amount">15.00</span></p>
+
+                 <!-- <label class="foodPrice">$
+                  <input type="number" name="foodPrice" id="foodPrice" value="150"> /meal</label> -->
+                </div>
+
+                <div class="quantity-add">
+                  <button type="button" id="addPlate">Add meal</button>
+                  <label class="quantity">
+                  <input type="text" name="quantity" id="quantity">
+                  Qty</label>
+                </div>
+              </div><!-- .item-detail -->
+              
+              <div class="item-detail">
+                <div class="food-image">
+                  <img src="image/anh-nguyen-kcA-c3f_3FE-unsplash.jpg" class="dish" alt="food" width="200px">
+                </div>
+
+                <div class="food-detail">
+                  <p class="food-name">Fried rice</p>
+                   <p class="food-price">$<span>15.00</span></p>
+
+                 <!-- <label class="foodPrice">$
+                  <input type="number" name="foodPrice" id="foodPrice" value="150"> /meal</label> -->
+                </div>
+
+                <div class="quantity-add">
+                  <button type="button" id="addPlate">Add meal</button>
+                  <label class="quantity">
+                  <input type="text" name="quantity" id="quantity">
+                  Qty</label>
+                </div>
+              </div><!-- .item-detail -->
+
+              <div class="item-detail">
+                <div class="food-image">
+                  <img src="image/anh-nguyen-kcA-c3f_3FE-unsplash.jpg" class="dish" alt="food" width="200px">
+                </div>
+
+                <div class="food-detail">
+                  <p class="food-name">Fried rice</p>
+                  <p class="food-price">$<span>15.00</span></p>
+
+                 <!-- <label class="foodPrice">$
+                  <input type="number" name="foodPrice" id="foodPrice" value="150"> /meal</label> -->
+                </div>
+
+                <div class="quantity-add">
+                  <button type="button" id="addPlate">Add meal</button>
+                  <label class="quantity">
+                  <input type="text" name="quantity" id="quantity">
+                  Qty</label>
+                </div>
+              </div><!-- .item-detail -->
+
+              <div class="item-detail">
+                <div class="food-image">
+                  <img src="image/anh-nguyen-kcA-c3f_3FE-unsplash.jpg" class="dish" alt="food" width="200px">
+                </div>
+
+                <div class="food-detail">
+                  <p class="food-name">Fried rice</p>
+                  <p class="food-price">$<span>15.00</span></p>
+
+                 <!-- <label class="foodPrice">$
+                  <input type="number" name="foodPrice" id="foodPrice" value="150"> /meal</label> -->
+                </div>
+
+                <div class="quantity-add">
+                  <button type="button" id="addPlate">Add meal</button>
+                  <label class="quantity">
+                  <input type="text" name="quantity" id="quantity">
+                  Qty</label>
+                </div>
+              </div><!-- .item-detail -->
+
+              <div class="item-detail">
+                <div class="food-image">
+                  <img src="image/anh-nguyen-kcA-c3f_3FE-unsplash.jpg" class="dish" alt="food" width="200px">
+                </div>
+
+                <div class="food-detail">
+                  <p class="food-name">Fried rice</p>
+                  <p class="food-price">$<span>15.00</span></p>
+
+                 <!-- <label class="foodPrice">$
+                  <input type="number" name="foodPrice" id="foodPrice" value="150"> /meal</label> -->
+                </div>
+
+                <div class="quantity-add">
+                  <button type="button" id="addPlate">Add meal</button>
+                  <label class="quantity">
+                  <input type="text" name="quantity" id="quantity">
+                  Qty</label>
+                </div>
+              </div><!-- .item-detail -->
+
+              <div class="item-detail">
+                <div class="food-image">
+                  <img src="image/anh-nguyen-kcA-c3f_3FE-unsplash.jpg" class="dish" alt="food" width="200px">
+                </div>
+
+                <div class="food-detail">
+                  <p class="food-name">Fried rice</p>
+                  <p class="food-price">$<span>15.00</span></p>
+
+                 <!-- <label class="foodPrice">$
+                  <input type="number" name="foodPrice" id="foodPrice" value="150"> /meal</label> -->
+                </div>
+
+                <div class="quantity-add">
+                  <button type="button" id="addPlate">Add meal</button>
+                  <label class="quantity">
+                  <input type="text" name="quantity" id="quantity">
+                  Qty</label>
+                </div>
+              </div><!-- .item-detail -->
+            </div><!-- .food-menu -->
+          </div><!-- .menu -->
+        </section>
+
+        <section id="checkout">
+          <h2 class="section-head">Checkout</h2>
+          <div class="billings">
+            <div class="bill-card">
+              <p class="qty" value="">2</p>
+              <p class="food-name">Fried rice</p>
+              <p class="subtotal">$<span class="subtotal-price">30</span></p>
+            </div><!-- .bill-card -->
+
+            <div class="bill-card">
+              <p class="qty" value="">2</p>
+              <p class="food-name">Fried rice</p>
+              <p class="subtotal">$<span class="subtotal-price">30</span></p>
+            </div><!-- .bill-card -->
+
+            <div class="bill-card">
+              <p class="qty" value="">2</p>
+              <p class="food-name">Fried rice</p>
+              <p class="subtotal">$<span class="subtotal-price">30</span></p>
+            </div><!-- .bill-card -->
+
+          </div><!-- .billings -->
+          <div id="totalBilling">
+            <sup>$</sup><span id="totalAmount">0.00</span>
+          </div><!-- #totalBilling -->
+          
+          <div class="button-section">
+            <button type="button" class= "button">Submit</button>
+
+            <button class= "button" type="button" id= "printout" >Print</button>
+            </button>    
+          </div>    
+        </section><!-- #checkout -->
+      </div><!-- #container -->
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="food-menu.js">
+ 
+    </script>
+</body>
+</html>
